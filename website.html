@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SSC WALLA – GK Questions</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f6f9;
+}
+
+nav{
+    background:#1e293b;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav .logo a{
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav ul li a{
+    color:#e5e7eb;
+    text-decoration:none;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+.container{
+    max-width:900px;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+h1,h2{
+    color:#0f172a;
+}
+
+h2{
+    border-bottom:3px solid #38bdf8;
+    display:inline-block;
+    padding-bottom:5px;
+}
+
+.author{
+    color:#475569;
+    font-size:14px;
+}
+
+.question{
+    background:#f1f5f9;
+    padding:15px;
+    border-radius:8px;
+    margin:20px 0;
+}
+
+.options i{
+    display:block;
+    margin:5px 0;
+}
+
+button{
+    background:#38bdf8;
+    border:none;
+    color:white;
+    padding:7px 15px;
+    border-radius:5px;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+button:hover{
+    background:#0284c7;
+}
+
+.answer{
+    display:none;
+    margin-top:10px;
+    font-weight:bold;
+    color:#16a34a;
+}
+
+.short-q{
+    background:#ecfeff;
+    padding:15px;
+    border-left:5px solid #06b6d4;
+    margin:15px 0;
+    border-radius:6px;
+}
+
+footer{
+    background:#1e293b;
+    color:#cbd5f5;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo"><a href="#">SSC WALLA</a></div>
+    <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="ABOUT.html">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="#">SIGN UP</a></li>
+        <li><a href="#">SIGN IN</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+
+<h1>SSC GK MOST IMPORTANT QUESTIONS</h1>
+<p class="author">Author: Priyank</p>
+
+<h2>MCQ Questions</h2>
+
+<!-- MCQ 1 -->
+<div class="question">
+<h3>1. Who is the current Prime Minister of India?</h3>
+<div class="options">
+<i>A) Narendra Modi</i>
+<i>B) Amit Shah</i>
+<i>C) Rahul Gandhi</i>
+<i>D) Nirmala Sitharaman</i>
+</div>
+<button onclick="toggle(1)">Show Answer</button>
+<div class="answer" id="a1">Answer: A) Narendra Modi</div>
+</div>
+
+<!-- MCQ 2 -->
+<div class="question">
+<h3>2. Which country hosted the FIFA World Cup 2022?</h3>
+<div class="options">
+<i>A) Qatar</i>
+<i>B) United Arab Emirates</i>
+<i>C) Saudi Arabia</i>
+<i>D) Iran</i>
+</div>
+<button onclick="toggle(2)">Show Answer</button>
+<div class="answer" id="a2">Answer: A) Qatar</div>
+</div>
+
+<!-- MCQ 3 -->
+<div class="question">
+<h3>3. Which country hosted the Winter Olympics 2022?</h3>
+<div class="options">
+<i>A) China</i>
+<i>B) Japan</i>
+<i>C) South Korea</i>
+<i>D) Russia</i>
+</div>
+<button onclick="toggle(3)">Show Answer</button>
+<div class="answer" id="a3">Answer: A) China</div>
+</div>
+
+<!-- MCQ 4 -->
+<div class="question">
+<h3>4. Which of the following is NOT a state of India?</h3>
+<div class="options">
+<i>A) Manipur</i>
+<i>B) Ladakh</i>
+<i>C) Uttar Pradesh</i>
+<i>D) Gujarat</i>
+</div>
+<button onclick="toggle(4)">Show Answer</button>
+<div class="answer" id="a4">Answer: B) Ladakh</div>
+</div>
+
+<!-- MCQ 5 -->
+<div class="question">
+<h3>5. Who was the first Indian to win the Nobel Prize in Literature?</h3>
+<div class="options">
+<i>A) Rabindranath Tagore</i>
+<i>B) Bankim Chandra Chatterjee</i>
+<i>C) Premchand</i>
+<i>D) R. K. Narayan</i>
+</div>
+<button onclick="toggle(5)">Show Answer</button>
+<div class="answer" id="a5">Answer: A) Rabindranath Tagore</div>
+</div>
+
+<!-- MCQ 6 -->
+<div class="question">
+<h3>6. Which year did India gain independence from British rule?</h3>
+<div class="options">
+<i>A) 1947</i>
+<i>B) 1948</i>
+<i>C) 1949</i>
+<i>D) 1950</i>
+</div>
+<button onclick="toggle(6)">Show Answer</button>
+<div class="answer" id="a6">Answer: A) 1947</div>
+</div>
+
+<!-- MCQ 7 -->
+<div class="question">
+<h3>7. What was the name of the movement led by Mahatma Gandhi to demand independence?</h3>
+<div class="options">
+<i>A) Non-Cooperation Movement</i>
+<i>B) Civil Disobedience Movement</i>
+<i>C) Quit India Movement</i>
+<i>D) All of the above</i>
+</div>
+<button onclick="toggle(7)">Show Answer</button>
+<div class="answer" id="a7">Answer: D) All of the above</div>
+</div>
+
+<!-- MCQ 8 -->
+<div class="question">
+<h3>8. Which year did India gain independence from British rule?</h3>
+<div class="options">
+<i>A) 1947</i>
+<i>B) 1948</i>
+<i>C) 1490</i>
+<i>D) 1259</i>
+</div>
+<button onclick="toggle(8)">Show Answer</button>
+<div class="answer" id="a8">Answer: A) 1947</div>
+</div>
+
+<!-- MCQ 9 -->
+<div class="question">
+<h3>9. Who was the first Prime Minister of India?</h3>
+<div class="options">
+<i>A) Jawaharlal Nehru</i>
+<i>B) Rajan Pandey</i>
+<i>C) Mahatma Gandhi</i>
+<i>D) Jawallal Nahru</i>
+</div>
+<button onclick="toggle(9)">Show Answer</button>
+<div class="answer" id="a9">Answer: A) Jawaharlal Nehru</div>
+</div>
+
+<!-- MCQ 10 -->
+<div class="question">
+<h3>10. Which is the longest river in the world?</h3>
+<div class="options">
+<i>A) Ganga</i>
+<i>B) Nile River</i>
+<i>C) Amazon River</i>
+<i>D) Gaurang River</i>
+</div>
+<button onclick="toggle(10)">Show Answer</button>
+<div class="answer" id="a10">Answer: C) Amazon River</div>
+</div>
+
+<h2>Short Questions</h2>
+
+<div class="short-q"><b>1.</b> Organisation that developed ‘Ugram’ Assault Rifle?<br>Answer: DRDO</div>
+<div class="short-q"><b>2.</b> Bad conductor of electricity?<br>Answer: Nepal</div>
+<div class="short-q"><b>3.</b> Jhulaghat Suspension Bridge connects India with?<br>Answer: Nepal</div>
+<div class="short-q"><b>4.</b> Effect of ocean acidification on pH?<br>Answer: pH level goes down</div>
+<div class="short-q"><b>5.</b> First para-athlete to receive Padma Bhushan?<br>Answer: Devendra Jhajharia</div>
+<div class="short-q"><b>6.</b> Zemu Glacier is located in?<br>Answer: Sikkim</div>
+<div class="short-q"><b>7.</b> First woman President of Chile?<br>Answer: Michelle Bachelet</div>
+<div class="short-q"><b>8.</b> Disease caused by protein deficiency?<br>Answer: Kwashiorkor</div>
+<div class="short-q"><b>9.</b> Indian winner of Ramon Magsaysay Award 2023?<br>Answer: Dr. Ravi Kannan R.</div>
+<div class="short-q"><b>10.</b> Chairman of 16th Finance Commission of India?<br>Answer: Dr. Arvind Panagariya</div>
+
+</div>
+
+<footer>
+© 2025 SSC WALLA | All Rights Reserved
+</footer>
+
+<script>
+function toggle(n){
+    let el = document.getElementById("a"+n);
+    el.style.display = el.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
